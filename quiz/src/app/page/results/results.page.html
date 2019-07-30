@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>results</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background" >
+
+    <video autoplay muted loop id="myVideo">
+        <source src="https://static.videezy.com/system/resources/previews/000/004/928/original/Snowy_Christmas_Motion_Background_4K.mp4" type="video/mp4">
+      </video>
+      
+<ion-card class="content" >
+  Category:1 results<br>
+  <br>
+
+  Question:1 = {{ans1}}&nbsp;&nbsp;{{negans1}}<br>
+  Question:2 = {{ans2}}&nbsp;&nbsp;{{negans2}}<br>
+  Question:3 = {{ans3}}&nbsp;&nbsp;{{negans3}}<br>
+  Question:4 = {{ans4}}&nbsp;&nbsp;{{negans4}}<br>
+  Question:5 = {{ans5}}&nbsp;&nbsp;{{negans5}}<br>
+<br>
+  Category:2 results<br>
+<br>
+  Question:1 = {{a1}}&nbsp;&nbsp;{{nega1}}<br>
+  Question:2 = {{a2}}&nbsp;&nbsp;{{nega2}}<br>
+  Question:3 = {{a3}}&nbsp;&nbsp;{{nega3}}<br>
+  Question:4 = {{a4}}&nbsp;&nbsp;{{nega4}}<br>
+  Question:5 = {{a5}}&nbsp;&nbsp;{{nega5}}<br>
+<br>
+  Category:3 results<br>
+<br>
+  Question:1 = {{answer1}}&nbsp;&nbsp;{{neganswer1}}<br>
+  Question:2 = {{answer2}}&nbsp;&nbsp;{{neganswer2}}<br>
+  Question:3 = {{answer3}}&nbsp;&nbsp;{{neganswer3}}<br>
+  Question:4 = {{answer4}}&nbsp;&nbsp;{{neganswer4}}<br>
+  Question:5 = {{answer5}}&nbsp;&nbsp;{{neganswer5}}<br><br>
+<ion-button color="secondary" expand= "full" (click)="show()"[disabled]= "disabled">Submit marks</ion-button><br>
+  <br>
+  {{total}}/15<br>
+  {{status}}<br>
+  {{timetaken}}
+  
+
+<ion-button color="secondary" expand="full" (click)="done()">Done</ion-button> 
+</ion-card>
+</ion-content>

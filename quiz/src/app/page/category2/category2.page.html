@@ -1,0 +1,122 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Geometry &nbsp;
+        <ion-icon name="alarm" style="zoom:1.5;"></ion-icon>&nbsp; 
+        {{remainingTime}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class= "background" >
+
+  <ion-card color="tertiary">
+
+
+    <ion-list>
+        <ion-radio-group [(ngModel)]="a1">
+          <ion-list-header>
+            Question:1<br><br> How many degrees are in a triangle?
+          </ion-list-header>
+          How many degrees are in a triangle?
+          <ion-item>
+            <ion-label>1 - 90</ion-label>
+            <ion-radio value="90" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>2 – 360</ion-label>
+            <ion-radio value="360"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>3 – 180</ion-label>
+            <ion-radio value="180"></ion-radio>
+          </ion-item>
+          
+        </ion-radio-group>
+      </ion-list>
+
+          <ion-list>
+            <ion-radio-group [(ngModel)]="a2">
+              <ion-list-header>
+                Question:2<br><br> The Pythagorean theorem holds true for which type of triangle?
+              </ion-list-header>
+             
+              <ion-item>
+                <ion-label>1 - All triangles</ion-label>
+                <ion-radio value="All triangle" ></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>2 – Right angled triangle</ion-label>
+                <ion-radio value="Right angled triangle"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>3 –   Isosceles triangle </ion-label>
+                <ion-radio value="Isosceles triangle"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+              
+              <ion-list>
+                <ion-radio-group [(ngModel)]="a3">
+                  <ion-list-header>
+                    Question:3<br><br>What shape is the tennis ball?
+                  </ion-list-header>
+                  
+                  <ion-item>
+                    <ion-label>1 - circle</ion-label>
+                    <ion-radio value="circle" ></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>2 – ball</ion-label>
+                    <ion-radio value="ball"></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>3 – Sphere</ion-label>
+                    <ion-radio value="Sphere"></ion-radio>
+                  </ion-item>
+                 
+                </ion-radio-group>
+              </ion-list>
+                
+                  <ion-list>
+                    <ion-radio-group [(ngModel)]="a4">
+                      <ion-list-header>
+                        Question:4<br><br>A polygon is a figure that is closed and has straight lines.? 
+                      </ion-list-header>
+                      
+                      <ion-item>
+                        <ion-label>1 - Yes</ion-label>
+                        <ion-radio value="Yes" ></ion-radio>
+                      </ion-item>
+                      <ion-item>
+                        <ion-label>2 – No</ion-label>
+                        <ion-radio value="No"></ion-radio>
+                      </ion-item>
+                      
+                    </ion-radio-group>
+                  </ion-list>
+
+                      <ion-list>
+                        <ion-radio-group [(ngModel)]="a5">
+                          <ion-list-header>
+                            Question:5<br><br> What is the biggest angle?
+                          </ion-list-header>
+                         
+                          <ion-item>
+                            <ion-label>1 - Right</ion-label>
+                            <ion-radio value="Right" ></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>2 – Acute</ion-label>
+                            <ion-radio value="Acute"></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>3 – Obtuse</ion-label>
+                            <ion-radio value="Obtuse"></ion-radio>
+                          </ion-item>
+                        </ion-radio-group>
+                      </ion-list>
+                          </ion-card>
+
+        
+  <ion-button color="secondary" expand="full" (click)="next()">Next</ion-button>
+</ion-content>

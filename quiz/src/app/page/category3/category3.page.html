@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-toolbar color="primary" >
+    <ion-title>Xhosa &nbsp;
+        <ion-icon name="alarm" style="zoom:1.5;"></ion-icon>&nbsp; 
+        {{remainingTime}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class= "background" >
+  <ion-card color="tertiary">
+      
+    <ion-list>
+        <ion-radio-group [(ngModel)]="answer1">
+          <ion-list-header>
+            Question:1<br><br> Ungubani
+          </ion-list-header>
+         
+          <ion-item>
+            <ion-label>1 - Who are you</ion-label>
+            <ion-radio value="Who are you" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>2 – Where are you</ion-label>
+            <ion-radio value="Where are you"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>3 – I will do</ion-label>
+            <ion-radio value="I will do"></ion-radio>
+          </ion-item>
+          
+        </ion-radio-group>
+      </ion-list>
+
+          <ion-list>
+            <ion-radio-group [(ngModel)]="answer2">
+              <ion-list-header>
+                Question:2<br><br>I don't eat
+              </ion-list-header>
+              
+              <ion-item>
+                <ion-label>1 - Andityi</ion-label>
+                <ion-radio value="Andityi" ></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>2 – Ndizotya</ion-label>
+                <ion-radio value="Ndizotya"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>3 – Ndityile</ion-label>
+                <ion-radio value="Ndityile"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-list>
+              
+              <ion-list>
+                <ion-radio-group [(ngModel)]="answer3">
+                  <ion-list-header>
+                    Question:3<br><br>Ndizobukela
+                  </ion-list-header>
+                  
+                  <ion-item>
+                    <ion-label>1 - I watch</ion-label>
+                    <ion-radio value="I watch" ></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>2 – I am going to watch</ion-label>
+                    <ion-radio value="I am going to watch"></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>3 – You will watch</ion-label>
+                    <ion-radio value="You will watch"></ion-radio>
+                  </ion-item>
+                 
+                </ion-radio-group>
+              </ion-list>
+                
+                  <ion-list>
+                    <ion-radio-group [(ngModel)]="answer4">
+                      <ion-list-header>
+                        Question:4<br><br>You watched
+                      </ion-list-header>
+                      
+                      <ion-item>
+                        <ion-label>1 - Ndiyo bukela</ion-label>
+                        <ion-radio value="ndiyo bukela" ></ion-radio>
+                      </ion-item>
+                      <ion-item>
+                        <ion-label>2 – Ububukele</ion-label>
+                        <ion-radio value="Ububukele"></ion-radio>
+                      </ion-item>
+                      <ion-item>
+                        <ion-label>3 – ndizo bukela</ion-label>
+                        <ion-radio value="ndizo bukela"></ion-radio>
+                      </ion-item>
+                      
+                    </ion-radio-group>
+                  </ion-list>
+
+                      <ion-list>
+                        <ion-radio-group [(ngModel)]="answer5">
+                          <ion-list-header>
+                            Question:5<br><br>I play
+                          </ion-list-header>
+                          
+                          <ion-item>
+                            <ion-label>1 - ndiya dlala</ion-label>
+                            <ion-radio value="ndiya dlala" ></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>2 – ndizo dlala</ion-label>
+                            <ion-radio value="ndizo dlala"></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>3 – ndidlalile</ion-label>
+                            <ion-radio value="ndidlalile"></ion-radio>
+                          </ion-item>
+                        </ion-radio-group>
+                      </ion-list>
+                          </ion-card>
+<ion-button color="secondary" expand= "full" (click)="submit()">Submit</ion-button>                  
+</ion-content>
+
+

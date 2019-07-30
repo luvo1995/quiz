@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-toolbar color="primary" >
+    <ion-title>Geography &nbsp; 
+        <ion-icon name="alarm" style="zoom:1.5;"></ion-icon>&nbsp; 
+        {{remainingTime}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class= "background" >
+  
+  <ion-card color="tertiary">
+
+      <!-- <ion-icon name="alarm"></ion-icon> -->
+
+      <!-- <div class="timer">
+          {{remainingTime}}
+      </div> -->
+     
+
+      <!-- {{remainingTime}} -->
+
+
+    
+    <ion-list>
+        <ion-radio-group [(ngModel)]="ans1">
+          <ion-list-header>
+            Question :1<br><br>
+            Which continent is supplying more gold?
+          </ion-list-header>
+          
+          <ion-item>
+            <ion-label>1 - Asia</ion-label>
+            <ion-radio value="Asia" ></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>2 – Africa</ion-label>
+            <ion-radio value="Africa"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>3 – Europe</ion-label>
+            <ion-radio value="Europe"></ion-radio>
+          </ion-item>
+          
+        </ion-radio-group>
+      </ion-list>
+
+          <ion-list>
+            <ion-radio-group [(ngModel)]="ans2">
+              <ion-list-header>
+                Question: 2 <br><br>
+                Mexico is part of North America.
+              </ion-list-header>
+              
+              <ion-item>
+                <ion-label>1 - True</ion-label>
+                <ion-radio value="True" ></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>2 – False</ion-label>
+                <ion-radio value="False"></ion-radio>
+              </ion-item>
+              
+            </ion-radio-group>
+          </ion-list>
+              
+              <ion-list>
+                <ion-radio-group [(ngModel)]="ans3">
+                  <ion-list-header>
+                    Question: 3 <br><br> California,New Mexico and Canada are all.....
+                  </ion-list-header>
+                  
+                  <ion-item>
+                    <ion-label>1 - States</ion-label>
+                    <ion-radio value="States" ></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>2 – Countries </ion-label>
+                    <ion-radio value="Countries"></ion-radio>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>3 – In North America</ion-label>
+                    <ion-radio value="In North America"></ion-radio>
+                  </ion-item>
+                 
+                </ion-radio-group>
+              </ion-list>
+                
+                  <ion-list>
+                    <ion-radio-group [(ngModel)]="ans4">
+                      <ion-list-header>
+                        Question :4  <br><br> Getting from the Altantic to the Pacific Through the Panama Canal, you travel West.
+                      </ion-list-header>
+                     
+                      <ion-item>
+                        <ion-label>1 - True</ion-label>
+                        <ion-radio value="True" ></ion-radio>
+                      </ion-item>
+                      <ion-item>
+                        <ion-label>2 – False</ion-label>
+                        <ion-radio value="False"></ion-radio>
+                      </ion-item>
+                      
+                      
+                    </ion-radio-group>
+                  </ion-list>
+
+                      <ion-list>
+                        <ion-radio-group [(ngModel)]="ans5">
+                          <ion-list-header>
+                            Question :5 <br><br> What line of latitude is at 0 degrees
+                          </ion-list-header>
+                          
+                          <ion-item>
+                            <ion-label>1 - Time Zones </ion-label>
+                            <ion-radio value="Time" ></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>2 – Equator</ion-label>
+                            <ion-radio value="Equator"></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>3 – Prime Meridian</ion-label>
+                            <ion-radio value="Prime Meridian"></ion-radio>
+                          </ion-item>
+                        </ion-radio-group>
+                      </ion-list>
+                          </ion-card>
+
+<ion-button color="secondary" expand="full" (click)="next()">Next</ion-button>
+</ion-content>
